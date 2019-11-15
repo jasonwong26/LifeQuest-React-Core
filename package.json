@@ -1,0 +1,70 @@
+{
+  "name": "@developermouse/lifequest-react-core",
+  "version": "1.0.0",
+  "description": "Shared Web UI resources for LifeQuest App",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasonwong26/LifeQuest-React-Core.git"
+  },
+  "keywords": [
+    "Developer Mouse",
+    "LifeQuest",
+    "React",
+    "Typescript"
+  ],
+  "author": "Jason Wong",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/jasonwong26/LifeQuest-React-Core/issues"
+  },
+  "homepage": "https://github.com/jasonwong26/LifeQuest-React-Core#readme",
+  "scripts": {
+    "lint": "tslint 'src/**/*.ts?(x)' || exit 0",
+    "lint:fix": "tslint 'src/**/*.ts?(x)' --fix",
+    "test": "jest --config jestconfig.json",
+    "test:watch": "jest --watch",
+    "prebuild": "rm -rf lib/",
+    "build": "tsc",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "dependencies": {
+    "@developermouse/ui-react-core": "^1.0.5",
+    "auth0-js": "^9.10.2",
+    "jwt-decode": "^2.2.0",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.1",
+    "redux-saga": "^0.16.2",
+    "typesafe-actions": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/auth0-js": "^8.11.12",
+    "@types/enzyme": "^3.10.3",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
+    "@types/jest": "^23.3.14",
+    "@types/jwt-decode": "^2.2.1",
+    "@types/node": "^10.14.10",
+    "@types/react": "^16.8.6",
+    "@types/react-dom": "^16.8.6",
+    "@types/react-router-dom": "^4.3.3",
+    "@types/react-test-renderer": "^16.9.1",
+    "@types/react-redux": "^6.0.14",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "enzyme-to-json": "^3.4.3",
+    "jest": "^24.9.0",
+    "react-test-renderer": "^16.11.0",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.7.2"
+  }
+}
