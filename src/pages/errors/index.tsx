@@ -1,3 +1,3 @@
 
-export * from "./NotAuthorized";
-export * from "./NotFound";
+export * from "./NotAuthorizedPage";
+export * from "./NotFoundPage";

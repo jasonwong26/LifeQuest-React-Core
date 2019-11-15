@@ -7,4 +7,4 @@ const NotAuthorizedPage = () => (
   </React.Fragment>
 );
 
-export { NotAuthorizedPage as NotAuthorized };
+export { NotAuthorizedPage };

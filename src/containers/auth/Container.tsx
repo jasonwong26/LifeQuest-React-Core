@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Redirect } from "react-router-dom";
+
 import * as Store from "../../store/auth";
 
 interface PropsFromState {

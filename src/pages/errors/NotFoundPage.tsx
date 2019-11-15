@@ -7,4 +7,4 @@ const NotFoundPage = () => (
   </React.Fragment>
 );
 
-export { NotFoundPage as NotFound };
+export { NotFoundPage };

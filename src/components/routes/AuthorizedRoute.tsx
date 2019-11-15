@@ -1,12 +1,8 @@
 import * as React from "react";
-// import { connect } from "react-redux";
-// import { Dispatch, bindActionCreators } from "redux";
 import { Route, RouteProps } from "react-router-dom";
 
-// import { ApplicationState } from "../../store/root";
 import * as Store from "../../store/auth";
-
-import { NotAuthorized } from "../../pages/errors";
+import { NotAuthorizedPage } from "../../pages/errors";
 
 interface PropsFromState {
   user: Store.AuthUser,
@@ -61,7 +57,7 @@ export const AuthorizedRoute: React.SFC<AllProps> = ({ user, errors, authorizedR
   const authorized = isAuthorized();
   const toRender = authorized
     ? component
-    : NotAuthorized;
+    : NotAuthorizedPage;
 
   return (
     <Route component={toRender} {...rest} />
