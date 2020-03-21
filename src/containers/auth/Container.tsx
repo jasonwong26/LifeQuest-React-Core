@@ -28,14 +28,13 @@ type ContainerProps = PropsFromState &
                       PropsFromDispatch &
                       PropsFromParent;
 
-type ChildProps = PropsFromState &
-                  ManagedProps;
+export type ChildProps = PropsFromState & ManagedProps;
 
 interface OtherProps {
   children: (props: ChildProps) => React.ReactNode
 }
 
-type AllProps = ContainerProps & OtherProps;
+export type AllProps = ContainerProps & OtherProps;
 
 interface State {
   isLoggedIn: boolean,
