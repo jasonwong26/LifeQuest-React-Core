@@ -1,6 +1,6 @@
 {
   "name": "@developermouse/lifequest-react-core",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Shared Web UI resources for LifeQuest App",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
