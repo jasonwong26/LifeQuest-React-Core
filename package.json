@@ -37,7 +37,7 @@
     "postversion": "git push && git push --tags"
   },
   "dependencies": {
-    "@developermouse/ui-react-core": "^1.0.7",
+    "@developermouse/ui-react-core": "^1.0.8",
     "auth0-js": "^9.13.0",
     "hoist-non-react-statics": "^3.3.2",
     "jwt-decode": "^2.2.0",
